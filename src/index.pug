@@ -1,0 +1,51 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport"
+			content="width=device-width initial-scale=1.0"
+		)
+		title NelliNosova Test
+	body(.body)
+		div(.body__avatar .avatar-box)
+			img(.avatar__image
+				src="images/png/photo1.png"
+				alt="Аватар"
+			)
+		div(.body__personal personal)
+			form(.personal__form
+				action="some"
+				method="get"
+			)
+			input(.personal__name-input .form-input
+				type="text"
+				#name
+				required
+			)
+			label(.personal__name-label .form-label
+				for="name"
+			) Имя
+			input(.personal__birth-input .form-input
+				type="text"
+				#birth
+				required
+			)
+			label(.personal__birth-label .form-label
+				for="birth"
+			) Дата рождения
+			input(.personal__town-input .form-input
+				type="text"
+				#town
+				required
+			)
+			label(.personal__town-label .form-label
+				for="town"
+			) Город
+			input(.personal__contacts-input .form-input
+				type="text"
+				#contacts
+				required
+			)
+			label(.personal__contacts-label .form-label
+				for="contacts"
+			) Контактные данные
