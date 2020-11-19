@@ -5,144 +5,165 @@ html(lang="ru")
 		meta(name="viewport"
 			content="width=device-width initial-scale=1.0"
 		)
-		title NelliNosova Test
-	body(.body)
-		div(.body__avatar .avatar-box)
-			img(.avatar__image
-				src="images/png/photo1.png"
+		title Nelli Nosova Test
+	body.body
+		.body__avatar.avatar-box
+			img.avatar__image(
+				width="200"
+				height="200"
+				src="images/sprites/png/nelli_photo.png"
 				alt="Аватар"
 			)
-		div(.body__personal personal)
-			form(.personal__form
+		.body__personal.personal
+			form.personal__form(
 				action="some"
 				method="get"
 			)
-			input(.personal__name-input .personal-input
+			input.personal__name-input.personal-input(
 				type="text"
 				#name
 				required
 			)
-			label(.personal__name-label .personal-label
+			label.personal__name-label.personal-label(
 				for="name"
 			) Имя
-			input(.personal__birth-input .personal-input
+			input.personal__birth-input.personal-input(
 				type="text"
 				#birth
 				required
 			)
-			label(.personal__birth-label .personal-label
+			label.personal__birth-label.personal-label(
 				for="birth"
 			) Дата рождения
-			input(.personal__town-input .personal-input
+			input.personal__town-input.personal-input(
 				type="text"
 				#town
 				required
 			)
-			label(.personal__town-label .personal-label
+			label.personal__town-label.personal-label(
 				for="town"
 			) Город
-			input(.personal__contacts-input .personal-input
+			input.personal__contacts-input.personal-input(
 				type="text"
 				#contacts
 				required
 			)
-			label(.personal__contacts-label .personal-label
+			label.personal__contacts-label.personal-label(
 				for="contacts"
 			) Контактные данные
-		div(.body__skills skills)
-			form(.skills__form
+		.body__skills.skills
+			h2.skills__header Навыки
+			form.skills__form(
 				action="some"
 				method="get"
 			)
-				input(.skills__checkbox
+				input.skills__checkbox(
 					type="checkbox"
 					#html5
 					checked
 				)
-				label(.skills__label
+				label.skills__label(
 					for="html5"
 				) html5
-				input(.skills__checkbox
+				input.skills__checkbox(
 					type="checkbox"
 					#sass
 				)
-				label(.skills__label
+				label.skills__label(
 					for="sass"
 					checked
 				) sass
-				input(.skills__checkbox
+				input.skills__checkbox(
 					type="checkbox"
 					#vanilla-js
 					checked
 				)
-				label(.skills__label
+				label.skills__label(
 					for="vanilla-js"
 				) vanillajs
-				input(.skills__checkbox
+				input.skills__checkbox(
 					type="checkbox"
 					#git
 					checked
 				)
-				label(.skills__label
+				label.skills__label(
 					for="git"
 				) git
-				input(.skills__checkbox
+				input.skills__checkbox(
 					type="checkbox"
 					#css3
 					checked
 				)
-				label(.skills__label
+				label.skills__label(
 					for="css3"
 				) css3
-				input(.skills__checkbox
+				input.skills__checkbox(
 					type="checkbox"
 					#less
 					checked
 				)
-				label(.skills__label
+				label.skills__label(
 					for="less"
 				) less
-				input(.skills__checkbox
+				input.skills__checkbox(
 					type="checkbox"
 					#angular
 				)
-				label(.skills__label
+				label.skills__label(
 					for="angular"
 				) angular
-				input(.skills__checkbox
+				input.skills__checkbox(
 					type="checkbox"
 					#foundation
 				)
-				label(.skills__label
+				label.skills__label(
 					for="foundation"
 				) foundation
-				input(.skills__checkbox
+				input.skills__checkbox(
 					type="checkbox"
 					#bem
 					checked
 				)
-				label(.skills__label
+				label.skills__label(
 					for="bem"
 				) бэм
-				input(.skills__checkbox
+				input.skills__checkbox(
 					type="checkbox"
 					#gulp
 					checked
 				)
-				label(.skills__label
+				label.skills__label(
 					for="gulp"
 				) gulp
-				input(.skills__checkbox
+				input.skills__checkbox(
 					type="checkbox"
 					#jquery
 				)
-				label(.skills__label
+				label.skills__label(
 					for="jquery"
 				) jquery
-				input(.skills__checkbox
+				input.skills__checkbox(
 					type="checkbox"
 					#bootstrap
 				)
-				label(.skills__label
+				label.skills__label(
 					for="bootstrap"
 				) bootstrap
+		.body__js.js
+			.js__interactive
+				svg.js__arrow(
+					width="50"
+					height="40"
+				)
+					use(xlink:href="images/sprites.svg#js_arrow")
+			.js__description.description
+				p.description__text Мой уровень владения JavaScript
+				.description__item
+					form.description__form(
+						action="some"
+						method="get"
+					)
+						input.description__input(
+							value="0"
+							type="number"
+						)
