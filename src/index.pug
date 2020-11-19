@@ -17,35 +17,132 @@ html(lang="ru")
 				action="some"
 				method="get"
 			)
-			input(.personal__name-input .form-input
+			input(.personal__name-input .personal-input
 				type="text"
 				#name
 				required
 			)
-			label(.personal__name-label .form-label
+			label(.personal__name-label .personal-label
 				for="name"
 			) Имя
-			input(.personal__birth-input .form-input
+			input(.personal__birth-input .personal-input
 				type="text"
 				#birth
 				required
 			)
-			label(.personal__birth-label .form-label
+			label(.personal__birth-label .personal-label
 				for="birth"
 			) Дата рождения
-			input(.personal__town-input .form-input
+			input(.personal__town-input .personal-input
 				type="text"
 				#town
 				required
 			)
-			label(.personal__town-label .form-label
+			label(.personal__town-label .personal-label
 				for="town"
 			) Город
-			input(.personal__contacts-input .form-input
+			input(.personal__contacts-input .personal-input
 				type="text"
 				#contacts
 				required
 			)
-			label(.personal__contacts-label .form-label
+			label(.personal__contacts-label .personal-label
 				for="contacts"
 			) Контактные данные
+		div(.body__skills skills)
+			form(.skills__form
+				action="some"
+				method="get"
+			)
+				input(.skills__checkbox
+					type="checkbox"
+					#html5
+					checked
+				)
+				label(.skills__label
+					for="html5"
+				) html5
+				input(.skills__checkbox
+					type="checkbox"
+					#sass
+				)
+				label(.skills__label
+					for="sass"
+					checked
+				) sass
+				input(.skills__checkbox
+					type="checkbox"
+					#vanilla-js
+					checked
+				)
+				label(.skills__label
+					for="vanilla-js"
+				) vanillajs
+				input(.skills__checkbox
+					type="checkbox"
+					#git
+					checked
+				)
+				label(.skills__label
+					for="git"
+				) git
+				input(.skills__checkbox
+					type="checkbox"
+					#css3
+					checked
+				)
+				label(.skills__label
+					for="css3"
+				) css3
+				input(.skills__checkbox
+					type="checkbox"
+					#less
+					checked
+				)
+				label(.skills__label
+					for="less"
+				) less
+				input(.skills__checkbox
+					type="checkbox"
+					#angular
+				)
+				label(.skills__label
+					for="angular"
+				) angular
+				input(.skills__checkbox
+					type="checkbox"
+					#foundation
+				)
+				label(.skills__label
+					for="foundation"
+				) foundation
+				input(.skills__checkbox
+					type="checkbox"
+					#bem
+					checked
+				)
+				label(.skills__label
+					for="bem"
+				) бэм
+				input(.skills__checkbox
+					type="checkbox"
+					#gulp
+					checked
+				)
+				label(.skills__label
+					for="gulp"
+				) gulp
+				input(.skills__checkbox
+					type="checkbox"
+					#jquery
+				)
+				label(.skills__label
+					for="jquery"
+				) jquery
+				input(.skills__checkbox
+					type="checkbox"
+					#bootstrap
+				)
+				label(.skills__label
+					for="bootstrap"
+				) bootstrap
