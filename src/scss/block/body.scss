@@ -2,6 +2,7 @@
 	@include basic-font;
 
 	margin: auto;
+	margin-top: 30px;
 	max-width: 800px;
 	font-family: $font-family-roboto;
 	background-image: url("../images/sprites/png/background.png");
@@ -12,4 +13,8 @@
 .body__skills,
 .body__js {
 	margin-bottom: 40px;
+}
+
+.body__js {
+	padding-top: 35px;
 }

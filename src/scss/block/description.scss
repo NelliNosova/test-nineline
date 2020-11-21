@@ -1,9 +1,44 @@
 .description {
 	position: relative;
+	margin-top: 40px;
+	animation: appearance-right;
+	animation-duration: 2s;
+	animation-timing-function: $easing-out;
+
+	@include tablet {
+		margin-top: 15px;
+		padding-right: 50px;
+		padding-left: 13px;
+		width: 52%;
+	}
+}
+
+.description__header {
+	margin-bottom: 9px;
+	margin-left: 2px;
 }
 
 .description__input {
+	margin: 0;
 	border: none;
+	padding: 0;
+	width: 100%;
 	font-size: 50px;
 	color: $color-blue;
+	background-color: transparent;
+}
+
+@keyframes appearance-right {
+	0% {
+		opacity: 0;
+		transform: translateX(300px);
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		transform: translateX(0%);
+	}
 }

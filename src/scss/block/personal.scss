@@ -18,13 +18,39 @@
 	position: relative;
 	margin-bottom: 26px;
 	width: 100%;
+	animation: appearance-right;
+	animation-duration: 2s;
+	animation-timing-function: $easing-out;
+
+	&--name {
+		animation-delay: 0.1s;
+	}
+
+	&--birth {
+		animation-delay: 0.3s;
+	}
+
+	&--town {
+		animation-delay: 0.5s;
+	}
+
+	&--contacts {
+		animation-delay: 0.7s;
+	}
 }
 
 .personal__input {
+	outline: none;
 	border: none;
 	border-bottom: 2px solid $color-black;
 	padding: 6px 10px;
 	width: 100%;
+	background-color: transparent;
+
+	&:hover,
+	&:focus {
+		border-color: $yellow;
+	}
 
 	&--town {
 		padding-bottom: 12px;
@@ -50,4 +76,47 @@
 	height: 170px;
 	background-image: url("../images/sprites/svg/approve.svg");
 	background-repeat: no-repeat;
+	animation: approve;
+	animation-duration: 1s;
+}
+
+.label-box {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	transition-duration: 0.7s;
+}
+
+.personal__input:focus ~ .label-box,
+.personal__input:hover ~ .label-box,
+.personal__input:valid ~ .label-box {
+	font-size: 10px;
+	transform: translateY(25px);
+}
+
+@keyframes appearance-right {
+	0% {
+		opacity: 0;
+		transform: translateX(300px);
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes approve {
+	0% {
+		opacity: 0;
+		transform: scale(3);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }

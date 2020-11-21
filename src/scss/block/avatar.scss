@@ -2,9 +2,21 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-bottom: 25px;
+	animation: appearance-left;
+	animation-duration: 2s;
+	animation-timing-function: $easing-out;
 }
 
 .avatar__image {
 	border-radius: 50%;
+}
+
+@keyframes appearance-left {
+	0% {
+		transform: translateX(-250px);
+	}
+
+	100% {
+		transform: translateX(0%);
+	}
 }

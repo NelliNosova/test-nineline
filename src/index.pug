@@ -25,141 +25,133 @@ html(lang="ru")
 					action="some"
 					method="get"
 				)
-					.personal__box
+					.personal__box.personal__box--name
 						input.personal__input.personal__input--name(
 							type="text"
 							#name
 							required
 						)
-						label.personal__label.personal__label--name(
-							for="name"
-						) Имя
-					.personal__box
+						.label-box
+							label.personal__label.personal__label--name(
+								for="name"
+							) Имя
+					.personal__box.personal__box--birth
 						input.personal__input.personal__input--birth(
-							type="text"
+							type="data"
 							#birth
 							required
 						)
-						label.personal__label.personal__label--birth(
-							for="birth"
-						) Дата рождения
-					.personal__box
+						.label-box
+							label.personal__label.personal__label--birth(
+								for="birth"
+							) Дата рождения
+					.personal__box.personal__box--town
 						input.personal__input.personal__input--town(
 							type="text"
 							#town
 							required
 						)
-						label.personal__label.personal__label--town(
-							for="town"
-						) Город
-					.personal__box
+						.label-box
+							label.personal__label.personal__label--town(
+								for="town"
+							) Город
+					.personal__box.personal__box--contacts
 						input.personal__input.personal__input--contacts(
 							type="text"
 							#contacts
 							required
 						)
-						label.personal__label.personal__label--contacts(
-							for="contacts"
-						) Контактные данные
+						.label-box
+							label.personal__label.personal__label--contacts(
+								for="contacts"
+							) Контактные данные
 		.body__skills.skills
 			h2.skills__header.header Навыки
 			form.skills__form(
 				action="some"
 				method="get"
 			)
-				input.skills__checkbox(
+				input.skills__checkbox#html5(
 					type="checkbox"
-					#html5
 					checked
 				)
-				label.skills__label(
+				label.skills__label.skills__label--html5(
 					for="html5"
 				) html5
-				input.skills__checkbox(
+				input.skills__checkbox#sass(
 					type="checkbox"
-					#sass
+					checked
 				)
-				label.skills__label(
+				label.skills__label.skills__label--sass(
 					for="sass"
-					checked
 				) sass
-				input.skills__checkbox(
+				input.skills__checkbox#vanilla-js(
 					type="checkbox"
-					#vanilla-js
 					checked
 				)
-				label.skills__label(
+				label.skills__label.skills__label--vanilla-js(
 					for="vanilla-js"
 				) vanillajs
-				input.skills__checkbox(
+				input.skills__checkbox#git(
 					type="checkbox"
-					#git
 					checked
 				)
-				label.skills__label(
+				label.skills__label.skills__label--git(
 					for="git"
 				) git
-				input.skills__checkbox(
+				input.skills__checkbox#css3(
 					type="checkbox"
-					#css3
 					checked
 				)
-				label.skills__label(
+				label.skills__label.skills__label--css3(
 					for="css3"
 				) css3
-				input.skills__checkbox(
+				input.skills__checkbox#less(
 					type="checkbox"
-					#less
 					checked
 				)
-				label.skills__label(
+				label.skills__label.skills__label--less(
 					for="less"
 				) less
-				input.skills__checkbox(
+				input.skills__checkbox#angular(
 					type="checkbox"
-					#angular
 				)
-				label.skills__label(
+				label.skills__label.skills__label--angular(
 					for="angular"
 				) angular
-				input.skills__checkbox(
+				input.skills__checkbox#foundation(
 					type="checkbox"
-					#foundation
 				)
-				label.skills__label(
+				label.skills__label.skills__label--foundation(
 					for="foundation"
 				) foundation
-				input.skills__checkbox(
+				input.skills__checkbox#bem(
 					type="checkbox"
-					#bem
 					checked
 				)
-				label.skills__label(
+				label.skills__label.skills__label--bem(
 					for="bem"
 				) бэм
-				input.skills__checkbox(
+				input.skills__checkbox#gulp(
 					type="checkbox"
-					#gulp
 					checked
 				)
-				label.skills__label(
+				label.skills__label.skills__label--gulp(
 					for="gulp"
 				) gulp
-				input.skills__checkbox(
+				input.skills__checkbox#jquery(
 					type="checkbox"
-					#jquery
 				)
-				label.skills__label(
+				label.skills__label.skills__label--jquery(
 					for="jquery"
 				) jquery
-				input.skills__checkbox(
+				input.skills__checkbox#bootstrap(
 					type="checkbox"
-					#bootstrap
 				)
-				label.skills__label(
+				label.skills__label.skills__label--bootstrap(
 					for="bootstrap"
 				) bootstrap
-		.body__js.js
+		.body__js.js.container
 			.js__interactive.interactive
 				svg.interactive__arrow(
 					width="50"
