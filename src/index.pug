@@ -1,4 +1,5 @@
 doctype html
+
 html(lang="ru")
 	head
 		meta(charset="UTF-8")
@@ -6,53 +7,62 @@ html(lang="ru")
 			content="width=device-width initial-scale=1.0"
 		)
 		title Nelli Nosova Test
+		link(
+			href="css/main.css"
+			rel="stylesheet"
+		)
 	body.body
-		.body__avatar.avatar-box
-			img.avatar__image(
-				width="200"
-				height="200"
-				src="images/sprites/png/nelli_photo.png"
-				alt="Аватар"
-			)
-		.body__personal.personal
-			form.personal__form(
-				action="some"
-				method="get"
-			)
-			input.personal__name-input.personal-input(
-				type="text"
-				#name
-				required
-			)
-			label.personal__name-label.personal-label(
-				for="name"
-			) Имя
-			input.personal__birth-input.personal-input(
-				type="text"
-				#birth
-				required
-			)
-			label.personal__birth-label.personal-label(
-				for="birth"
-			) Дата рождения
-			input.personal__town-input.personal-input(
-				type="text"
-				#town
-				required
-			)
-			label.personal__town-label.personal-label(
-				for="town"
-			) Город
-			input.personal__contacts-input.personal-input(
-				type="text"
-				#contacts
-				required
-			)
-			label.personal__contacts-label.personal-label(
-				for="contacts"
-			) Контактные данные
+		.container
+			.body__avatar.avatar
+				img.avatar__image(
+					width="140"
+					height="140"
+					src="images/sprites/png/nelli_photo.png"
+					alt="Аватар"
+				)
+			.body__personal.personal.personal--approved
+				form.personal__form(
+					action="some"
+					method="get"
+				)
+					.personal__box
+						input.personal__input.personal__input--name(
+							type="text"
+							#name
+							required
+						)
+						label.personal__label.personal__label--name(
+							for="name"
+						) Имя
+					.personal__box
+						input.personal__input.personal__input--birth(
+							type="text"
+							#birth
+							required
+						)
+						label.personal__label.personal__label--birth(
+							for="birth"
+						) Дата рождения
+					.personal__box
+						input.personal__input.personal__input--town(
+							type="text"
+							#town
+							required
+						)
+						label.personal__label.personal__label--town(
+							for="town"
+						) Город
+					.personal__box
+						input.personal__input.personal__input--contacts(
+							type="text"
+							#contacts
+							required
+						)
+						label.personal__label.personal__label--contacts(
+							for="contacts"
+						) Контактные данные
 		.body__skills.skills
-			h2.skills__header Навыки
+			h2.skills__header.header Навыки
 			form.skills__form(
 				action="some"
 				method="get"
@@ -150,14 +160,14 @@ html(lang="ru")
 					for="bootstrap"
 				) bootstrap
 		.body__js.js
-			.js__interactive
-				svg.js__arrow(
+			.js__interactive.interactive
+				svg.interactive__arrow(
 					width="50"
 					height="40"
 				)
 					use(xlink:href="images/sprites.svg#js_arrow")
 			.js__description.description
-				p.description__text Мой уровень владения JavaScript
+				h2.description__header.header Мой уровень владения JavaScript
 				.description__item
 					form.description__form(
 						action="some"

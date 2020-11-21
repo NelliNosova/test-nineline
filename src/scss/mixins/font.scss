@@ -1,0 +1,8 @@
+@mixin basic-font($font-size: 12px, $line-height: 22px) {
+	font-weight: 500;
+	font-size: $font-size;
+	line-height: $line-height;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: $color-font-base;
+}

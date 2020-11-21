@@ -1,1 +1,10 @@
 // stylelint-disable no-empty-source
+@font-face {
+	src:
+		url("../fonts/Roboto-Medium.woff2") format("woff2"),
+		url("../fonts/Roboto-Medium.woff") format("woff");
+	font-family: "Roboto";
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}

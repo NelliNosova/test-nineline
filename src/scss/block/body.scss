@@ -1,0 +1,15 @@
+.body {
+	@include basic-font;
+
+	margin: auto;
+	max-width: 800px;
+	font-family: $font-family-roboto;
+	background-image: url("../images/sprites/png/background.png");
+}
+
+.body__avatar,
+.body__personal,
+.body__skills,
+.body__js {
+	margin-bottom: 40px;
+}
