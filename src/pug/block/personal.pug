@@ -1,0 +1,45 @@
+.body__personal.personal.personal--approved
+	form.personal__form(
+		action="some"
+		method="get"
+	)
+		.personal__box.personal__box--name
+			input.personal__input.personal__input--name#name(
+				value="Нелли Носова"
+				type="text"
+				required
+			)
+			.label-box
+				label.personal__label.personal__label--name(
+					for="name"
+				) Имя
+		.personal__box.personal__box--birth
+			input.personal__input.personal__input--birth#birth(
+				value="04.01.1990"
+				type="data"
+				required
+			)
+			.label-box
+				label.personal__label.personal__label--birth(
+					for="birth"
+				) Дата рождения
+		.personal__box.personal__box--town
+			input.personal__input.personal__input--town#town(
+				value="Лешно, Польша"
+				type="text"
+				required
+			)
+			.label-box
+				label.personal__label.personal__label--town(
+					for="town"
+				) Город
+		.personal__box.personal__box--contacts
+			input.personal__input.personal__input--contacts#contacts(
+				value="+48796991348, nelli0401@gmail.com"
+				type="text"
+				required
+			)
+			.label-box
+				label.personal__label.personal__label--contacts(
+					for="contacts"
+				) Контактные данные

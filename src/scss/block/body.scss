@@ -1,6 +1,7 @@
 .body {
 	@include basic-font;
 
+	overflow-x: hidden;
 	margin: auto;
 	margin-top: 30px;
 	max-width: 800px;

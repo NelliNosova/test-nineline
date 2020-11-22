@@ -106,12 +106,13 @@
 .skills__checkbox {
 	appearance: none;
 	position: absolute;
+	opacity: 0;
 }
 
 .skills__checkbox:hover + .skills__label::before {
 	box-shadow:
-		0 0 5px 5px $yellow,
-		inset 0 0 10px 2px $yellow;
+		0 0 5px 1px $yellow,
+		inset 0 0 10px 1px $yellow;
 	transform: scale(1.2);
 }
 

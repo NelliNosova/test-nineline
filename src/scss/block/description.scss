@@ -28,6 +28,12 @@
 	background-color: transparent;
 }
 
+.description__input:hover,
+.description__input:focus {
+	outline: none;
+	border-bottom: 2px solid $yellow;
+}
+
 @keyframes appearance-right {
 	0% {
 		opacity: 0;
